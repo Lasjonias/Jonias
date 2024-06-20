@@ -1,0 +1,72 @@
+/* estilo.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('jabon.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    background-color: rgba(200, 200, 200, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1000px; /* Ajusta el ancho máximo del cuadro según sea necesario */
+    margin: 0 20px; /* Espaciado lateral para asegurarse de que no toque los bordes en pantallas pequeñas */
+    font-family: Centaur, sans-serif; /* Ajusta la fuente según prefieras */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.btn-continue {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-continue:hover {
+    background-color: #45a049; /* Color de fondo del botón al pasar el mouse */
+}
+/* Contenedor de la imagen */
+/* Define el tamaño inicial de la imagen */
+.animar-imagen {
+    width: 600px;
+    height: 200px;
+    transition: width 2s, height 2s;
+}
+
+/* Define la animación */
+.animar-imagen:hover {
+    width: 300px; /* Ancho al pasar el ratón por encima */
+    height: 300px; /* Alto al pasar el ratón por encima */
+    animation: giro 2s infinite; /* Aplica una animación de giro */
+}
+
+/* Define la animación de giro */
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.texto-centro{
+    text-align: center;
+}
